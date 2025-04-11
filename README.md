@@ -5,7 +5,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2504.07963-b31b1b.svg)](https://arxiv.org/abs/2504.07963)&nbsp;
 [![demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Online_Demo-blue)](https://huggingface.co/spaces/ShoufaChen/PixelFlow)&nbsp;
 
-![pixelflow](https://github.com/user-attachments/assets/ba295b9f-dcf9-41c4-bcd5-f5cec0159831)
+
+![pixelflow](https://github.com/user-attachments/assets/7e2e4db9-4b41-46ca-8d43-92f2b642a676)
 
 </div>
 
