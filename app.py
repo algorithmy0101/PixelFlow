@@ -23,8 +23,8 @@ local_rank = 0
 device = torch.device(f"cuda:{local_rank}")
 torch.cuda.set_device(device)
 
+output_dir = args.checkpoint
 if args.class_cond:
-    output_dir = 'powc2i'
     config = OmegaConf.load(f"{output_dir}/config.yaml")
     model = config_utils.instantiate_from_config(config.model).to(device)
     print(f"Num of parameters: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
@@ -34,7 +34,6 @@ if args.class_cond:
     resolution = 256
     NUM_EXAMPLES = 4
 else:
-    output_dir = 'powt2i'
     config = OmegaConf.load(f"{output_dir}/config.yaml")
     model = config_utils.instantiate_from_config(config.model).to(device)
     print(f"Num of parameters: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
